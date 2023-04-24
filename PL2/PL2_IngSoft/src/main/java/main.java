@@ -11,14 +11,18 @@ public class main {
     public static void main(String[] args) {
         // Crear un objeto de la clase polinomioSegundoGrado
         polinomioSegundoGrado polinomio = new polinomioSegundoGrado();
+        polinomioTercerGrado polinomio2 = new polinomioTercerGrado();
         
         // Definir los valores de los coeficientes
-        int a = 6;
-        int b = 1;
-        int c = 35;
+        double a = 4;
+        double b = 2;
+        double c = 1;
+        //double d = -6;
+        
         
         // Calcular el valor del polinomio y mostrar el resultado
-        System.out.println(polinomio.calcular(a, b, c));
+        //System.out.println(polinomio.calcular(a, b, c));
+        System.out.println(polinomio.calcular(a,b,c));
     }
 }
 
