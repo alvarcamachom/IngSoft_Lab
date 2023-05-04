@@ -20,6 +20,9 @@ public class PolinomioTercerGrado {
         this.d = d;
     }
 
+    public PolinomioTercerGrado() {
+    }
+
     //Métodos
     
     public double valor(double x) {

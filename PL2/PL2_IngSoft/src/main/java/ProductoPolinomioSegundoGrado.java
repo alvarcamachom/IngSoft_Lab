@@ -7,9 +7,14 @@
  *
  * @author migui
  */
-public class ProductoPolinomioSegundoGrado extends PolinomioSegundoGrado{
+public class ProductoPolinomioSegundoGrado extends PolinomioSegundoGrado {
+
     private PolinomioSegundoGrado p;
-    
+
+    public PolinomioSegundoGrado getP() {
+        return p;
+    }
+
     ProductoPolinomioSegundoGrado(PolinomioSegundoGrado p1, PolinomioSegundoGrado p2) {
         super(0, 0, 0);
         this.p = p1;
@@ -18,9 +23,7 @@ public class ProductoPolinomioSegundoGrado extends PolinomioSegundoGrado{
         this.c = p1.getA() * p2.getC() + p1.getB() * p2.getB() + p1.getC() * p2.getA();
     }
 
-
     public double valor(double x) {
         return p.valor(x) * super.valor(x);
     }
-    
 }
